@@ -1,0 +1,11 @@
+D:\projekty\fibbo\fibbo\fibbo\bin\Release\fibbo.exe.config
+D:\projekty\fibbo\fibbo\fibbo\bin\Release\fibbo.exe.manifest
+D:\projekty\fibbo\fibbo\fibbo\bin\Release\fibbo.application
+D:\projekty\fibbo\fibbo\fibbo\bin\Release\fibbo.exe
+D:\projekty\fibbo\fibbo\fibbo\bin\Release\fibbo.pdb
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.csproj.CoreCompileInputs.cache
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.exe.manifest
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.application
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.exe
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.pdb
+D:\projekty\fibbo\fibbo\fibbo\obj\Release\fibbo.csprojResolveAssemblyReference.cache
