@@ -16,6 +16,7 @@ namespace BST
                 if (heap.Max() > prev) throw new Exception("Error in Heap");
                 prev = heap.Max();
                 heap.DeleteMax();
+                //////////////////////////////////sdjkfhli
             }
         }
 
