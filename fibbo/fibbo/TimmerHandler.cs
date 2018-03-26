@@ -52,7 +52,7 @@ namespace fibbo
                         sw.Start();
                         Algorithms.Strong(i);
                         sw.Stop();
-                        timeArray[i - 2] = string.Format(i + "," + sw.Elapsed.TotalMilliseconds);
+                        timeArray[i - 2] = string.Format(i + ";" + sw.Elapsed.TotalMilliseconds);
                         sw.Restart();
                         Console.Clear();
                     }
