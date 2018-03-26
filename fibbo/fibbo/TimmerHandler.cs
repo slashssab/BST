@@ -77,7 +77,8 @@ namespace fibbo
 
 
                 default:
-                    break;
+                    throw new Exception("to nie jest poprawny wybór");
+          
             }
  
             return timeArray;
