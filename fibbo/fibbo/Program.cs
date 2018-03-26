@@ -55,15 +55,15 @@ namespace fibbo
                     System.Console.Write("\nWygenerowano CSV");
                     Console.ReadKey();
                     break;
-                case State.ConductTimeMeasurement:
-                    System.Console.Write("\nilość iteracji/elementów : ");
-                    int amountOfElements = Convert.ToInt32(System.Console.ReadLine());
+                case State.ConductTimeMeasurement:  
                     System.Console.Write("\ntestowana funkcja : ");
                     System.Console.Write("\n1 - QuickSort ");
                     System.Console.Write("\n2 - BubbleSort ");
                     System.Console.Write("\n3 - Silnia ");
                     System.Console.Write("\n4 - Fibbo ");
                     int rodzajFunkcji = Convert.ToInt32(System.Console.ReadLine());
+                    System.Console.Write("\nilość iteracji/elementów : ");
+                    int amountOfElements = Convert.ToInt32(System.Console.ReadLine());
                     string plikDanych;
                     switch (rodzajFunkcji)
                     {
