@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BST", "BST\BST.csproj", "{C77A97DA-0F41-4102-910E-1D524E1C31E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "BST\Heap.csproj", "{C77A97DA-0F41-4102-910E-1D524E1C31E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
