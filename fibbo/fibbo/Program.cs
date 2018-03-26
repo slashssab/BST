@@ -56,9 +56,38 @@ namespace fibbo
                     Console.ReadKey();
                     break;
                 case State.ConductTimeMeasurement:
-                    System.Console.Write("ilość : ");
+                    System.Console.Write("\nilość iteracji/elementów : ");
                     int amountOfElements = Convert.ToInt32(System.Console.ReadLine());
-                    CSVHandle.SaveArrayAsCSV("./noweDaneQuick.csv", TimmerHandler.getTimmerArray(amountOfElements));
+                    System.Console.Write("\ntestowana funkcja : ");
+                    System.Console.Write("\n1 - QuickSort ");
+                    System.Console.Write("\n2 - BubbleSort ");
+                    System.Console.Write("\n3 - Silnia ");
+                    System.Console.Write("\n4 - Fibbo ");
+                    int rodzajFunkcji = Convert.ToInt32(System.Console.ReadLine());
+                    string plikDanych;
+                    switch (rodzajFunkcji)
+                    {
+                        case 1:
+                            plikDanych = "./noweDaneQuick.csv";
+                            break;
+
+                        case 2:
+                            plikDanych = "./noweDaneBubble.csv";
+                            break;
+
+                        case 3:
+                            plikDanych = "./noweDaneStrong.csv";
+                            break;
+
+                        case 4:
+                            plikDanych = "./noweDaneFibbo.csv";
+                            break;
+
+                        default:
+                            throw new Exception("zły tryb wybrany");
+                           
+                    }
+                    CSVHandle.SaveArrayAsCSV(plikDanych, TimmerHandler.getTimmerArray(amountOfElements, rodzajFunkcji));
                     break;
             }
         }

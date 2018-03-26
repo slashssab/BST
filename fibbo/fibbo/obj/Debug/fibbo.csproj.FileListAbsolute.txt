@@ -9,3 +9,14 @@ D:\projekty\fibbo\fibbo\fibbo\bin\Debug\fibbo.exe.manifest
 D:\projekty\fibbo\fibbo\fibbo\bin\Debug\fibbo.application
 D:\projekty\fibbo\fibbo\fibbo\obj\Debug\fibbo.exe.manifest
 D:\projekty\fibbo\fibbo\fibbo\obj\Debug\fibbo.application
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\bin\Debug\fibbo.exe.config
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\bin\Debug\fibbo.exe.manifest
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\bin\Debug\fibbo.application
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\bin\Debug\fibbo.exe
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\bin\Debug\fibbo.pdb
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.csprojResolveAssemblyReference.cache
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.csproj.CoreCompileInputs.cache
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.exe.manifest
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.application
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.exe
+C:\Users\manioo8\source\repos\BST\fibbo\fibbo\obj\Debug\fibbo.pdb
