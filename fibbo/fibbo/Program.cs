@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using fibbo;
+using ConsoleApp2;
 
 namespace fibbo
 {
@@ -55,15 +56,15 @@ namespace fibbo
                     System.Console.Write("\nWygenerowano CSV");
                     Console.ReadKey();
                     break;
-                case State.ConductTimeMeasurement:
-                    System.Console.Write("\nilość iteracji/elementów : ");
-                    int amountOfElements = Convert.ToInt32(System.Console.ReadLine());
+                case State.ConductTimeMeasurement:  
                     System.Console.Write("\ntestowana funkcja : ");
                     System.Console.Write("\n1 - QuickSort ");
                     System.Console.Write("\n2 - BubbleSort ");
                     System.Console.Write("\n3 - Silnia ");
                     System.Console.Write("\n4 - Fibbo ");
                     int rodzajFunkcji = Convert.ToInt32(System.Console.ReadLine());
+                    System.Console.Write("\nilość iteracji/elementów : ");
+                    int amountOfElements = Convert.ToInt32(System.Console.ReadLine());
                     string plikDanych;
                     switch (rodzajFunkcji)
                     {
@@ -89,6 +90,9 @@ namespace fibbo
                     }
                     CSVHandle.SaveArrayAsCSV(plikDanych, TimmerHandler.getTimmerArray(amountOfElements, rodzajFunkcji));
                     break;
+                case State.Tree:
+                    Wykonywujacy.program();
+                    break;
             }
         }
        
@@ -102,7 +106,7 @@ namespace fibbo
             while (CurrentState != State.Exit)
             {
                 CurrentState = State.Idle;
-                System.Console.Write("Menu:\n1. Silnia \n2. ciąg Fibbonaciego\n3. Bubble Sort liczb z pliku Dane.csv\n4. Quick Sort liczb z pliku Dane.csv\n5. Utwórz plik CSV\n6. Przeprowadź pomiar czasu\n7. Opuść program");
+                System.Console.Write("Menu:\n1. Silnia \n2. ciąg Fibbonaciego\n3. Bubble Sort liczb z pliku Dane.csv\n4. Quick Sort liczb z pliku Dane.csv\n5. Utwórz plik CSV\n6. Przeprowadź pomiar czasu\n7. Menu drzewa\n8. Opuść program");
                 keyinfo = Console.ReadKey();
                 if (keyinfo.KeyChar == '1') CurrentState = State.Strong;
                 if (keyinfo.KeyChar == '2') CurrentState = State.F;
@@ -110,12 +114,13 @@ namespace fibbo
                 if (keyinfo.KeyChar == '4') CurrentState = State.quickSort;
                 if (keyinfo.KeyChar == '5') CurrentState = State.Create;
                 if (keyinfo.KeyChar == '6') CurrentState = State.ConductTimeMeasurement;
-                if (keyinfo.KeyChar == '7') CurrentState = State.Exit;
+                if (keyinfo.KeyChar == '7') CurrentState = State.Tree;
+                if (keyinfo.KeyChar == '8') CurrentState = State.Exit;
                 Menu(CurrentState);
                 Console.Clear();
             }    
             
-            System.Console.ReadKey();
+            //System.Console.ReadKey();
         }
     }
 }
