@@ -28,8 +28,11 @@ namespace BST
                 heap.Insert(RandomNumber.Next(1000));
             }
             heap.Check();
+            heap.DispData(heap);
+            Console.ReadLine();
             heap.DeleteMax();
             CheckDeleteMax(heap);
+            
         }
     }
     public class Heap
@@ -42,6 +45,14 @@ namespace BST
             data = new List<int>();
             //dodaję zerowy element ponieważ zaczynamy wypełniać tablicę od indeksu 1
             data.Add(0);
+        }
+
+        public void DispData(Heap _heap)
+        {
+            foreach(int element in _heap.data)
+            {
+                Console.WriteLine(element);
+            }
         }
 
         private void Swap(int index0, int index1)
