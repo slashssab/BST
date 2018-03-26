@@ -16,6 +16,7 @@ namespace fibbo
         Create,
         ConductTimeMeasurement,
         Tree,
+        Kopiec,
         Exit
     };
 }

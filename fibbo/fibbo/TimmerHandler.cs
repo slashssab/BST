@@ -8,7 +8,7 @@ namespace fibbo
 {
     public static class TimmerHandler
     {
-        public static string[] getTimmerArray(int iterations, int rodzajFunkcji)
+        public static string[] getTimmerArray(int iterations, char rodzajFunkcji)
         {
             string[] timeArray = new string[iterations];
             Stopwatch sw = new Stopwatch();
@@ -19,7 +19,7 @@ namespace fibbo
 
             switch (rodzajFunkcji)
             {
-                case 1:
+                case '1':
                     for (int i = 2; i < iterations; i++)
                     {
                         System.Console.Write("\nIteracja: " + (i - 2));
@@ -32,7 +32,7 @@ namespace fibbo
                     }
                     break;
 
-                case 2:
+                case '2':
                     for (int i = 2; i < iterations; i++)
                     {
                         System.Console.Write("\nIteracja: " + (i - 2));
@@ -45,20 +45,20 @@ namespace fibbo
                     }
                     break;
 
-                case 3:
+                case '3':
                     for (int i = 2; i < iterations; i++)
                     {
                         System.Console.Write("\nIteracja: " + (i - 2));
                         sw.Start();
                         Algorithms.Strong(i);
                         sw.Stop();
-                        timeArray[i - 2] = string.Format(i + ";" + sw.Elapsed.TotalMilliseconds);
+                        timeArray[i - 2] = string.Format(i + "," + sw.Elapsed.TotalMilliseconds);
                         sw.Restart();
                         Console.Clear();
                     }
                     break;
 
-                case 4:
+                case '4':
                     for (int i = 2; i < iterations; i++)
                     {
                         System.Console.Write("\nIteracja: " + (i - 2));
