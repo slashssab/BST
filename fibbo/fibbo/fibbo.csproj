@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Algorithms.cs" />
     <Compile Include="AnotherBST\NewBST.cs" />
+    <Compile Include="BST.cs" />
     <Compile Include="BST\BinaryTree.cs" />
     <Compile Include="BST\BinaryTreeNode.cs" />
     <Compile Include="BST\Node.cs" />

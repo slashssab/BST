@@ -15,6 +15,7 @@ namespace fibbo
         quickSort,
         Create,
         ConductTimeMeasurement,
+        Tree,
         Exit
     };
 }
