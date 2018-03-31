@@ -10,5 +10,7 @@ namespace Lists_n_Heaps
     {
         string GetPlWord(Word _word);
         string GetEngWord(Word _word);
+        string GetTranslationWordFromEng(string _eng, List<Word> _dictionary);
+        string GetTranslationWordFromPl(string _eng, List<Word> _dictionary);
     }
 }

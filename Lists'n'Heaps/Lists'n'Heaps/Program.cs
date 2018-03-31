@@ -10,6 +10,13 @@ namespace Lists_n_Heaps
     {
         static void Main(string[] args)
         {
+            Dictionary slownik = new Dictionary();
+            IDictionaryManager pomoc = new DictionaryManager();
+            slownik.addWord(new Word("Hi","Cześć"));
+            Console.WriteLine(pomoc.GetTranslationWordFromEng("Hi",slownik.words));
+            Console.ReadKey();
+            slownik.deleteWord(slownik.words[0]);
+            Console.ReadKey();
 
         }
     }

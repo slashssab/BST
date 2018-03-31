@@ -8,16 +8,23 @@ namespace Lists_n_Heaps
 {
     class Dictionary
     {
-        public List<Word> dictionary { get; set; }
+        public List<Word> words { get; set; }
         
         public Dictionary()
         {
-            dictionary = new List<Word>();
+            words = new List<Word>();
         }
 
-        void addWord(Word _word)
+        public void addWord(Word _word)
         {
-            this.dictionary.Add(_word);
+            _word.eng = _word.eng.ToLower();
+            _word.pl = _word.pl.ToLower();
+            this.words.Add(_word);
+        }
+        public void deleteWord(Word _word)
+        {
+            if (this.words.Where(i => i.eng == _word.eng) != null)
+                this.words.Remove(this.words.Where(i => i.eng == _word.eng).FirstOrDefault());
         }
 
     }
