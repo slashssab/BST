@@ -10,13 +10,17 @@ namespace Lists_n_Heaps
     {
         static void Main(string[] args)
         {
+            States states = new States();
+            MenuOrganizer menu = new MenuOrganizer();
             Dictionary slownik = new Dictionary();
-            IDictionaryManager pomoc = new DictionaryManager();
-            slownik.addWord(new Word("Hi","Cześć"));
-            Console.WriteLine(pomoc.GetTranslationWordFromEng("Hi",slownik.words));
-            Console.ReadKey();
-            slownik.deleteWord(slownik.words[0]);
-            Console.ReadKey();
+            DictionaryManager pomoc = new DictionaryManager(slownik.words);
+            pomoc.addWord("Hi","Cześć");
+            pomoc.addWord("Loop", "Pętla");
+            pomoc.addWord("Run", "Biegać");
+            pomoc.addWord("Retarded", "Niedorozwinięty");
+
+            menu.MenuLoop(states, pomoc);
+
 
         }
     }

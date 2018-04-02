@@ -43,10 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dictionary.cs" />
+    <Compile Include="MenuOrganizer.cs" />
     <Compile Include="DictionaryManager.cs" />
     <Compile Include="IDictionaryManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateCommands\AbstractWordCommand.cs" />
+    <Compile Include="StateCommands\AddWordCommand.cs" />
+    <Compile Include="StateCommands\DeleteWordCommand.cs" />
+    <Compile Include="StateCommands\Invoker.cs" />
+    <Compile Include="StateCommands\IStateCommand.cs" />
+    <Compile Include="StateCommands\IStateCommandFactory.cs" />
+    <Compile Include="StateCommands\TranslateAng2PlCommand.cs" />
+    <Compile Include="StateCommands\TranslatePol2angCommand.cs" />
+    <Compile Include="StateCommands\WordcCommandFactory.cs" />
+    <Compile Include="StateCommands\AbsctractWordCommandFactory.cs" />
+    <Compile Include="States.cs" />
     <Compile Include="Word.cs" />
   </ItemGroup>
   <ItemGroup>
