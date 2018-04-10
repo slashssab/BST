@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fibbo.exe" size="17344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fibbo.exe" size="17856">
       <assemblyIdentity name="fibbo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cMxMEmu8QY4j5oFovuCYIAqpZ0stHZYeoLkkHZaG4QA=</dsig:DigestValue>
+        <dsig:DigestValue>Dnopwdho6CVbLr+/9Ul1ubSvfVbJFkkc9uE2GVxC/kU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
