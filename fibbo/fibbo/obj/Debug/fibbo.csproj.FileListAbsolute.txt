@@ -31,3 +31,14 @@ C:\Users\Arek\Source\Repos\BST\fibbo\fibbo\obj\Debug\fibbo.exe.manifest
 C:\Users\Arek\Source\Repos\BST\fibbo\fibbo\obj\Debug\fibbo.application
 C:\Users\Arek\Source\Repos\BST\fibbo\fibbo\obj\Debug\fibbo.exe
 C:\Users\Arek\Source\Repos\BST\fibbo\fibbo\obj\Debug\fibbo.pdb
+D:\projekty\BST\BST\fibbo\fibbo\bin\Debug\fibbo.exe.config
+D:\projekty\BST\BST\fibbo\fibbo\bin\Debug\fibbo.exe.manifest
+D:\projekty\BST\BST\fibbo\fibbo\bin\Debug\fibbo.application
+D:\projekty\BST\BST\fibbo\fibbo\bin\Debug\fibbo.exe
+D:\projekty\BST\BST\fibbo\fibbo\bin\Debug\fibbo.pdb
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.csprojResolveAssemblyReference.cache
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.csproj.CoreCompileInputs.cache
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.exe.manifest
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.application
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.exe
+D:\projekty\BST\BST\fibbo\fibbo\obj\Debug\fibbo.pdb

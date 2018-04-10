@@ -111,7 +111,7 @@ namespace fibbo
             while (CurrentState != State.Exit)
             {
                 CurrentState = State.Idle;
-                System.Console.Write("Menu:\n1. Silnia \n2. ciąg Fibbonaciego\n3. Bubble Sort liczb z pliku Dane.csv\n4. Quick Sort liczb z pliku Dane.csv\n5. Utwórz plik CSV\n6. Przeprowadź pomiar czasu\n7. Menu drzewa\n8. Menu kopca\n9. Opuść program");
+                System.Console.Write("Michał Wojciechowski 226678\nMenu:\n1. Silnia \n2. ciąg Fibbonaciego\n3. Bubble Sort liczb z pliku Dane.csv\n4. Quick Sort liczb z pliku Dane.csv\n5. Utwórz plik CSV\n6. Przeprowadź pomiar czasu\n7. Menu drzewa\n8. Menu kopca\n9. Opuść program");
                 keyinfo = Console.ReadKey();
                 if (keyinfo.KeyChar == '1') CurrentState = State.Strong;
                 if (keyinfo.KeyChar == '2') CurrentState = State.F;
