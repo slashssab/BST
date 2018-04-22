@@ -18,6 +18,8 @@ namespace Lists_n_Heaps
             manager.addWord("Loop", "Pętla");
             manager.addWord("Run", "Biegać");
             manager.addWord("Retarded", "Niedorozwinięty");
+            manager.addWord("Michael", "Michał" );
+            manager.addWord("Wing", "Skrzydło");
 
             menu.MenuLoop(states, manager);
 

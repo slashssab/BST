@@ -8,34 +8,36 @@ namespace Lists_n_Heaps.StateCommands.HeapSort
 {
     public class HeapSort
     {
-        private int heapSize;
+        private int heapSize = 6;
 
-        private void BuildHeap(int[] arr)
-        {    
-            for (int i = (arr.Length - 1) / 2; i >= 0; i--)
+
+        private void BuildHeap(List<Word> arr)
+        {
+            heapSize = arr.Count - 1;
+            for (int i = heapSize / 2; i >= 0; i--)
             {
                 Heapify(arr, i);
             }
         }
 
-        private void Swap(int[] arr, int x, int y)//function to swap elements
+        private void Swap(List<Word> arr, int x, int y)//function to swap elements
         {
-            int temp = arr[x];
+            Word temp = arr[x];
             arr[x] = arr[y];
             arr[y] = temp;
         }
-        private void Heapify(int[] arr, int index)
+        private void Heapify(List<Word> arr, int index)
         {
             int left = 2 * index;
             int right = 2 * index + 1;
             int largest = index;
-
-            if (left <= heapSize && arr[left] > arr[index])
+            
+            if (left <= heapSize && Encoding.ASCII.GetBytes(arr[left].eng)[0] > Encoding.ASCII.GetBytes(arr[index].eng)[0])
             {
                 largest = left;
             }
 
-            if (right <= heapSize && arr[right] > arr[largest])
+            if (right <= heapSize && Encoding.ASCII.GetBytes(arr[right].eng)[0] > Encoding.ASCII.GetBytes(arr[largest].eng)[0])
             {
                 largest = right;
             }
@@ -46,10 +48,10 @@ namespace Lists_n_Heaps.StateCommands.HeapSort
                 Heapify(arr, largest);
             }
         }
-        public void PerformHeapSort(int[] arr)
+        public void PerformHeapSort(List<Word> arr)
         {
             BuildHeap(arr);
-            for (int i = arr.Length - 1; i >= 0; i--)
+            for (int i = arr.Count - 1; i >= 0; i--)
             {
                 Swap(arr, 0, i);
                 heapSize--;
@@ -57,10 +59,10 @@ namespace Lists_n_Heaps.StateCommands.HeapSort
             }
             DisplayArray(arr);
         }
-        private void DisplayArray(int[] arr)
+        private void DisplayArray(List<Word> arr)
         {
-            for (int i = 0; i < arr.Length; i++)
-            { Console.Write("[{0}]", arr[i]); }
+            for (int i = 0; i < arr.Count; i++)
+            { Console.Write("[{0}]", arr[i].eng); }
         }
     }
 }

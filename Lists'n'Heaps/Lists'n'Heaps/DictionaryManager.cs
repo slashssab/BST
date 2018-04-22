@@ -61,14 +61,9 @@ namespace Lists_n_Heaps
             }
         }
 
-        public int[] GetTableOfValues()
+        public List<Word> GetTableOfValues()
         {
-            int[] arr = new int[dictionary.Count];
-            for(int i  = 0; i < dictionary.Count - 1; i++)
-            { 
-                arr[i] = Encoding.ASCII.GetBytes(dictionary[i].pl)[0];
-            }
-            return arr;
+            return dictionary;
         }
     }
 }
