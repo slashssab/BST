@@ -93,6 +93,17 @@ namespace Heapp
         {
             return data[1];
         }
+        public void PokazKopiec(int index)
+        {
+            if (index < HeapSize)
+                Console.WriteLine("         "+data[index]);
+            int a = index * 2;
+            if ((a+1)< HeapSize)
+                Console.WriteLine("     "+data[a]+" - "+data[a+1]);
+            if(((a + 1) * 2 + 1)<HeapSize)
+                Console.WriteLine(data[a * 2] + " - " + data[a * 2+1] + " - "+ data[(a+1) * 2] + " - " + data[(a + 1) * 2 + 1]);
+        }
+
         public static void glowneMenu()
         {
             Heap heap = new Heap();
@@ -118,7 +129,13 @@ namespace Heapp
                     }
                 }
                 if (iter.KeyChar == '2') { heap.DeleteMax(); }
-                if (iter.KeyChar == '3') { heap.DispData(heap); Console.ReadKey(); }
+                //if (iter.KeyChar == '3') { heap.DispData(heap); Console.ReadKey(); }
+                if (iter.KeyChar == '3')
+                {
+                    Console.WriteLine("Jaki indeks pokazać?");
+                    heap.PokazKopiec(Convert.ToInt32(Console.ReadLine()));
+                    Console.ReadKey();
+                }
                 if (iter.KeyChar == '4') { exit = true; }
 
                 //Console.ReadLine();
