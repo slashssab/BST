@@ -51,6 +51,8 @@
     <Compile Include="StateCommands\AbstractWordCommand.cs" />
     <Compile Include="StateCommands\AddWordCommand.cs" />
     <Compile Include="StateCommands\DeleteWordCommand.cs" />
+    <Compile Include="StateCommands\DisplayAllWordCommand.cs" />
+    <Compile Include="StateCommands\HeapSort\HeapSort.cs" />
     <Compile Include="StateCommands\Invoker.cs" />
     <Compile Include="StateCommands\IStateCommand.cs" />
     <Compile Include="StateCommands\IStateCommandFactory.cs" />
@@ -63,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="slownik_eng.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

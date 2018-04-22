@@ -70,4 +70,16 @@ namespace Lists_n_Heaps.StateCommands
             return new TranslatePol2angCommand(_state, this.dictionaryManager);
         }
     }
+    public class DisplayAllWordCommandFactory : AbstaractWordCommandFactory
+    {
+        public DisplayAllWordCommandFactory(DictionaryManager _dictionaryManager) : base(_dictionaryManager)
+        {
+            state = States.DisplayAll;
+        }
+
+        public override IStateCommand GetCommand(States _state)
+        {
+            return new DisplayAllWordCommand(_state, this.dictionaryManager);
+        }
+    }
 }

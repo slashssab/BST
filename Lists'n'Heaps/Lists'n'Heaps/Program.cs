@@ -13,13 +13,13 @@ namespace Lists_n_Heaps
             States states = new States();
             MenuOrganizer menu = new MenuOrganizer();
             Dictionary slownik = new Dictionary();
-            DictionaryManager pomoc = new DictionaryManager(slownik.words);
-            pomoc.addWord("Hi","Cześć");
-            pomoc.addWord("Loop", "Pętla");
-            pomoc.addWord("Run", "Biegać");
-            pomoc.addWord("Retarded", "Niedorozwinięty");
+            DictionaryManager manager = new DictionaryManager(slownik.words);
+            manager.addWord("Hi","Cześć");
+            manager.addWord("Loop", "Pętla");
+            manager.addWord("Run", "Biegać");
+            manager.addWord("Retarded", "Niedorozwinięty");
 
-            menu.MenuLoop(states, pomoc);
+            menu.MenuLoop(states, manager);
 
 
         }

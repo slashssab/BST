@@ -13,6 +13,7 @@ namespace Lists_n_Heaps
         deleteWord,
         translateAng2Pol,
         translatePol2ang,
+        DisplayAll,
         Exit
     }
 }

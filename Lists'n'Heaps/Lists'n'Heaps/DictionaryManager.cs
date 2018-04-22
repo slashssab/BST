@@ -50,5 +50,14 @@ namespace Lists_n_Heaps
             else throw new Exception(String.Format("Word {0} is not a known word", _word.pl));
         }
 
+        public void DisplayAll()
+        {
+            foreach(Word word in dictionary)
+            {
+                Console.WriteLine("Pl: {0}, Ang: {1}", Encoding.ASCII.GetBytes(word.pl)[0], word.eng);
+            }
+
+        }
+
     }
 }
