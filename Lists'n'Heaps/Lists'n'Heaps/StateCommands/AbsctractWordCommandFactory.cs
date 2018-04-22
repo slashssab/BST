@@ -82,4 +82,16 @@ namespace Lists_n_Heaps.StateCommands
             return new DisplayAllWordCommand(_state, this.dictionaryManager);
         }
     }
+    public class SortDictionaryCommandFactory : AbstaractWordCommandFactory
+    {
+        public SortDictionaryCommandFactory(DictionaryManager _dictionaryManager) : base(_dictionaryManager)
+        {
+            state = States.Sort;
+        }
+
+        public override IStateCommand GetCommand(States _state)
+        {
+            return new SortDictionaryCommand(_state, this.dictionaryManager);
+        }
+    }
 }

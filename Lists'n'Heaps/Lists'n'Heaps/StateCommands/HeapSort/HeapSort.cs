@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lists_n_Heaps.StateCommands.HeapSort
 {
-    class HeapSort
+    public class HeapSort
     {
         private int heapSize;
 
         private void BuildHeap(int[] arr)
-        {
-            heapSize = arr.Length - 1;
-            for (int i = heapSize / 2; i >= 0; i--)
+        {    
+            for (int i = (arr.Length - 1) / 2; i >= 0; i--)
             {
                 Heapify(arr, i);
             }

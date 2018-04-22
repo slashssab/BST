@@ -18,6 +18,7 @@ namespace Lists_n_Heaps.StateCommands
             Factories.Add(new TranslateAng2PlCommandFactory(_dictionaryManager));
             Factories.Add(new TranslatePol2angCommandFactory(_dictionaryManager));
             Factories.Add(new DisplayAllWordCommandFactory(_dictionaryManager));
+            Factories.Add(new SortDictionaryCommandFactory(_dictionaryManager));
         }
         public IStateCommand GetCommand(States state)
 

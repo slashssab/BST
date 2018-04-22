@@ -12,7 +12,7 @@ namespace Lists_n_Heaps
         //Displays the menu commands
         private void DisplayMenu()
         {
-            Console.WriteLine("1. Słownik Polsko-Angielski\n2. Słownik Angielsko-Polski\n3. Dodaj słowo\n4. Usuń słowo\n5. Wyświetl\n6. Wyjście");
+            Console.WriteLine("1. Słownik Polsko-Angielski\n2. Słownik Angielsko-Polski\n3. Dodaj słowo\n4. Usuń słowo\n5. Wyświetl\n6. Sort\n7. Wyjście");
         }
 
         //execute command in response of the input state
@@ -54,7 +54,8 @@ namespace Lists_n_Heaps
                 if (keyinfo.KeyChar == '3') _state = States.addWord;
                 if (keyinfo.KeyChar == '4') _state = States.deleteWord;
                 if (keyinfo.KeyChar == '5') _state = States.DisplayAll;
-                if (keyinfo.KeyChar == '6') _state = States.Exit;
+                if (keyinfo.KeyChar == '6') _state = States.Sort;
+                if (keyinfo.KeyChar == '7') _state = States.Exit;
                 Console.ReadKey();
                 this.ExecuteTask
                     (

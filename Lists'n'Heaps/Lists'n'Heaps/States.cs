@@ -14,6 +14,7 @@ namespace Lists_n_Heaps
         translateAng2Pol,
         translatePol2ang,
         DisplayAll,
+        Sort,
         Exit
     }
 }

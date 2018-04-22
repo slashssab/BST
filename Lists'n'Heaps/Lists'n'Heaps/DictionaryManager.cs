@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lists_n_Heaps.StateCommands.HeapSort;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace Lists_n_Heaps
     public class DictionaryManager: IDictionaryManager
     {
         private List<Word> dictionary { get;  set; }
+        public HeapSort hs = new HeapSort();
+
         public DictionaryManager(List<Word> _dictionary)
         {
             dictionary = _dictionary;
@@ -56,8 +59,16 @@ namespace Lists_n_Heaps
             {
                 Console.WriteLine("Pl: {0}, Ang: {1}", Encoding.ASCII.GetBytes(word.pl)[0], word.eng);
             }
-
         }
 
+        public int[] GetTableOfValues()
+        {
+            int[] arr = new int[dictionary.Count];
+            for(int i  = 0; i < dictionary.Count - 1; i++)
+            { 
+                arr[i] = Encoding.ASCII.GetBytes(dictionary[i].pl)[0];
+            }
+            return arr;
+        }
     }
 }
