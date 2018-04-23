@@ -1,4 +1,5 @@
-﻿using Lists_n_Heaps.StateCommands.HeapSort;
+﻿using BST.heap;
+using Lists_n_Heaps.StateCommands.HeapSort;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Lists_n_Heaps
     {
         private List<Word> dictionary { get;  set; }
         public HeapSort hs = new HeapSort();
+        public Heap heap = new Heap();
 
         public DictionaryManager(List<Word> _dictionary)
         {
@@ -57,13 +59,41 @@ namespace Lists_n_Heaps
         {
             foreach(Word word in dictionary)
             {
-                Console.WriteLine("Pl: {0}, Ang: {1}", Encoding.ASCII.GetBytes(word.pl)[0], word.eng);
+                Console.WriteLine("Pl: {0}, Ang: {1}", word.pl, word.eng);
             }
         }
 
         public List<Word> GetTableOfValues()
         {
             return dictionary;
+        }
+
+        public void ImportCSV(string _filePath)
+        {
+            string reader = System.IO.File.ReadAllText(_filePath);
+            reader = reader.Replace('\n', '\r');
+            string[] lines = reader.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] numbers_a = new string[lines.Length];
+
+            for (int i = 0; i < numbers_a.Length - 1; i++)
+            {
+                numbers_a[i] = lines[i];
+            }
+            
+            for (int i = 0; i < numbers_a.Length - 1; i++)
+            {
+                this.addWord(numbers_a[i].Split(new char[] { ';' }, StringSplitOptions.None)[0].ToLower(), numbers_a[i].Split(new char[] { ';' }, StringSplitOptions.None)[1].ToLower());
+            }
+        }
+
+        public void MakeDictionaryBST()
+        {
+            foreach(Word word in dictionary)
+            {
+                heap.Insert(word);
+            }
+            heap.PokazKopiec(5);
+            Console.ReadKey();
         }
     }
 }

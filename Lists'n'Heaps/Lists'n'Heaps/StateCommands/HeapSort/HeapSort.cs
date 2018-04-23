@@ -8,12 +8,12 @@ namespace Lists_n_Heaps.StateCommands.HeapSort
 {
     public class HeapSort
     {
-        private int heapSize = 6;
+        private int heapSize;
 
 
         private void BuildHeap(List<Word> arr)
         {
-            heapSize = arr.Count - 1;
+            heapSize = arr.Count- 1;
             for (int i = heapSize / 2; i >= 0; i--)
             {
                 Heapify(arr, i);
@@ -62,7 +62,7 @@ namespace Lists_n_Heaps.StateCommands.HeapSort
         private void DisplayArray(List<Word> arr)
         {
             for (int i = 0; i < arr.Count; i++)
-            { Console.Write("[{0}]", arr[i].eng); }
+            { Console.WriteLine("[{0}]", arr[i].eng); }
         }
     }
 }

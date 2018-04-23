@@ -9,7 +9,9 @@ namespace Lists_n_Heaps
     public enum States
     {
         idle,
+        import,
         addWord,
+        BST,
         deleteWord,
         translateAng2Pol,
         translatePol2ang,
